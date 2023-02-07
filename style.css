@@ -42,3 +42,8 @@ h2 {
   font-family: monospace;
   margin-bottom: auto;
 }
+
+.help {
+  margin-top: auto;
+  font-size: 0.9em;
+}
