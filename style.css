@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #171717;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  pading: 0;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.patternMeta {
+  display: flex;
+  gap: 30px;
+}
+
+#info {
+  color: white;
+  font-family: monospace;
+  margin-bottom: auto;
+}
