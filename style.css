@@ -41,6 +41,9 @@ h2 {
   color: white;
   font-family: monospace;
   margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .help {
