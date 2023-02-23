@@ -27,6 +27,18 @@ function setup() {
     endColors[i] = 200; //random(190);
   }
   updateInfo();
+
+  const ul = document.getElementById("patterns");
+  Object.keys(patterns).forEach((p) => {
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+    btn.innerHTML = patterns[p].name;
+    li.appendChild(btn);
+    btn.onclick = () => {
+      selectPattern(p);
+    }
+    ul.appendChild(li);
+  });
 }
 
 function updateInfo() {
@@ -63,11 +75,15 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mousePressedz() {
   const patternNames = Object.keys(patterns);
   const k = Math.floor(Math.random() * patternNames.length);
-  const name = patternNames[k];
-  pattern = patterns[name];
+  const key = patternNames[k];
+  selectPattern(key);
+}
+
+function selectPattern(key) {
+  pattern = patterns[key];
   updateInfo();
 }
 
