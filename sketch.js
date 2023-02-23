@@ -75,7 +75,7 @@ function draw() {
   }
 }
 
-function mousePressedz() {
+function randomPattern() {
   const patternNames = Object.keys(patterns);
   const k = Math.floor(Math.random() * patternNames.length);
   const key = patternNames[k];
